@@ -61,7 +61,7 @@ export default function ContactUs() {
                 {/* Right - Image (non-draggable) */}
                 <div className="w-full lg:w-[480px] shrink-0 rounded-2xl overflow-hidden shadow-2xl">
                     <img
-                        src="/Section.png.png"
+                        src="/crm-assistant.png"
                         alt="Hero Visual"
                         className="w-full h-auto object-cover"
                         draggable="false"
