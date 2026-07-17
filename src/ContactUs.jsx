@@ -10,10 +10,10 @@ export default function ContactUs() {
 
             {/* NAVBAR */}
             <nav className="flex justify-between items-center px-6 lg:px-16 py-4 border-b border-gray-200 relative z-50">
-                <div className="flex items-center gap-2">
+                <a href="/" className="flex items-center gap-2 hover:opacity-90 transition cursor-pointer">
                     <img src="/Image1.png" alt="Paxofi Logo" className="w-10 h-10" />
                     <span className="text-[#0F2D4A] text-xl font-bold">PAXOFI</span>
-                </div>
+                </a>
 
                 {/* Desktop Nav Links */}
                 <div className="hidden md:flex items-center gap-6 text-[#45556C] font-medium text-sm">
@@ -308,10 +308,10 @@ export default function ContactUs() {
             <footer className="bg-[#EFF6FF] px-6 lg:px-16 py-16">
                 <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 justify-between">
                     <div className="flex flex-col gap-4 lg:col-span-2 pr-8">
-                        <div className="flex items-center gap-2">
+                        <a href="/" className="flex items-center gap-2 w-fit hover:opacity-90 transition cursor-pointer">
                             <img src="/Image1.png" alt="Paxofi Logo" className="w-10 h-10" />
                             <span className="text-[#0F2D4A] text-xl font-bold">PAXOFI</span>
-                        </div>
+                        </a>
                         <p className="text-[#0F2D4A] text-sm leading-relaxed">Africa's Digital Infrastructure Platform, empowering businesses through payments, identity verification, compliance, APIs, cloud, and document services.</p>
                         <div className="flex gap-3 mt-4">
                             <a href="/" className="w-9 h-9 rounded-lg border border-blue-200 bg-white flex items-center justify-center text-blue-600 font-bold hover:shadow transition cursor-pointer">in</a>
