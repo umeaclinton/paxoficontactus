@@ -123,11 +123,11 @@ export default function ContactUs() {
                     {/* Map & Info Container */}
                     <div className="flex flex-col gap-6">
                         <div className="w-full h-[240px] rounded-2xl overflow-hidden shadow-sm">
-                           <img 
-                             src="/Map.png" 
-                             alt="Our Location in Lagos" 
-                             className="w-full h-full object-cover" 
-                           />
+                            <img
+                                src="/Map.png"
+                                alt="Our Location in Lagos"
+                                className="w-full h-full object-cover"
+                            />
                         </div>
                         <div className="border border-gray-200 rounded-2xl p-8 flex flex-col gap-6">
                             <h3 className="text-xl font-semibold text-[#0F172B]">Our Location</h3>
@@ -196,7 +196,7 @@ export default function ContactUs() {
                     </div>
                 </div>
                 <div className="max-w-7xl mx-auto border-t border-blue-200 mt-12 pt-6">
-                    <p className="text-[#0F2D4A] text-xs">© 2026 Paxofi. All rights reserved.</p>
+                    <p className="text-[#0F2D4A] text-xs">© 2026 Paxofi. All rights reserved..</p>
                 </div>
             </footer>
 
