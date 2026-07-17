@@ -1,29 +1,94 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function ContactUs() {
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
     return (
-        <div className="min-h-screen bg-white font-inter overflow-x-hidden" style={{minWidth: '1024px'}}>
+        <div className="min-h-screen bg-white font-inter overflow-x-hidden">
 
             {/* NAVBAR */}
-            <nav className="flex justify-between items-center px-6 lg:px-16 py-4 border-b border-gray-200">
+            <nav className="flex justify-between items-center px-6 lg:px-16 py-4 border-b border-gray-200 relative z-50">
                 <div className="flex items-center gap-2">
                     <img src="/Image1.png" alt="Paxofi Logo" className="w-10 h-10" />
                     <span className="text-[#0F2D4A] text-xl font-bold">PAXOFI</span>
                 </div>
-                <div className="flex items-center gap-6 text-[#45556C] font-medium text-sm">
-                    <a href="#" className="flex items-center gap-1">Products <span className="opacity-50">▾</span></a>
-                    <a href="#" className="flex items-center gap-1">Solutions <span className="opacity-50">▾</span></a>
-                    <a href="#">Pricing</a>
-                    <a href="#">Company</a>
+
+                {/* Desktop Nav Links */}
+                <div className="hidden md:flex items-center gap-6 text-[#45556C] font-medium text-sm">
+
+                    {/* Products Dropdown */}
+                    <div className="relative group">
+                        <button className="flex items-center gap-1 hover:text-[#0F2D4A] transition cursor-pointer">
+                            Products <span className="opacity-50">▾</span>
+                        </button>
+                        <div className="absolute top-full left-0 mt-2 w-44 bg-white border border-gray-100 rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
+                            <a href="#" className="block px-4 py-2 text-sm text-[#0F2D4A] hover:bg-[#EFF6FF]">Paxofi Pay</a>
+                            <a href="#" className="block px-4 py-2 text-sm text-[#0F2D4A] hover:bg-[#EFF6FF]">Paxofi Verify</a>
+                            <a href="#" className="block px-4 py-2 text-sm text-[#0F2D4A] hover:bg-[#EFF6FF]">Paxofi Business</a>
+                            <a href="#" className="block px-4 py-2 text-sm text-[#0F2D4A] hover:bg-[#EFF6FF]">Paxofi API</a>
+                            <a href="#" className="block px-4 py-2 text-sm text-[#0F2D4A] hover:bg-[#EFF6FF]">Paxofi Cloud</a>
+                            <a href="#" className="block px-4 py-2 text-sm text-[#0F2D4A] hover:bg-[#EFF6FF]">Paxofi Agent</a>
+                        </div>
+                    </div>
+
+                    {/* Solutions Dropdown */}
+                    <div className="relative group">
+                        <button className="flex items-center gap-1 hover:text-[#0F2D4A] transition cursor-pointer">
+                            Solutions <span className="opacity-50">▾</span>
+                        </button>
+                        <div className="absolute top-full left-0 mt-2 w-40 bg-white border border-gray-100 rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
+                            <a href="#" className="block px-4 py-2 text-sm text-[#0F2D4A] hover:bg-[#EFF6FF]">Startups</a>
+                            <a href="#" className="block px-4 py-2 text-sm text-[#0F2D4A] hover:bg-[#EFF6FF]">SMEs</a>
+                            <a href="#" className="block px-4 py-2 text-sm text-[#0F2D4A] hover:bg-[#EFF6FF]">Enterprises</a>
+                            <a href="#" className="block px-4 py-2 text-sm text-[#0F2D4A] hover:bg-[#EFF6FF]">Developers</a>
+                            <a href="#" className="block px-4 py-2 text-sm text-[#0F2D4A] hover:bg-[#EFF6FF]">Government</a>
+                        </div>
+                    </div>
+
+                    <a href="#" className="hover:text-[#0F2D4A] transition">Pricing</a>
+                    <a href="#" className="hover:text-[#0F2D4A] transition">Company</a>
                 </div>
-                <a href="/" className="bg-[#0F2D4A] text-white px-5 py-2 rounded-xl text-sm font-semibold hover:bg-[#1a4369] transition">
+
+                <a href="/" className="hidden md:inline-block bg-[#0F2D4A] text-white px-5 py-2 rounded-xl text-sm font-semibold hover:bg-[#1a4369] transition">
                     About us
                 </a>
+
+                {/* Mobile Burger Button */}
+                <button
+                    className="md:hidden flex flex-col gap-1.5 p-2"
+                    onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                >
+                    <span className="w-6 h-0.5 bg-[#0F2D4A] block"></span>
+                    <span className="w-6 h-0.5 bg-[#0F2D4A] block"></span>
+                    <span className="w-6 h-0.5 bg-[#0F2D4A] block"></span>
+                </button>
+
+                {/* Mobile Menu */}
+                <div className={`${isMobileMenuOpen ? 'flex' : 'hidden'} absolute top-full left-0 right-0 bg-white border-b border-gray-200 shadow-lg z-50 px-6 py-6 flex-col gap-4`}>
+                    <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Products</p>
+                    <a href="#" className="block text-sm text-[#0F2D4A] py-1 hover:underline">Paxofi Pay</a>
+                    <a href="#" className="block text-sm text-[#0F2D4A] py-1 hover:underline">Paxofi Verify</a>
+                    <a href="#" className="block text-sm text-[#0F2D4A] py-1 hover:underline">Paxofi Business</a>
+                    <a href="#" className="block text-sm text-[#0F2D4A] py-1 hover:underline">Paxofi API</a>
+                    <a href="#" className="block text-sm text-[#0F2D4A] py-1 hover:underline">Paxofi Cloud</a>
+                    <a href="#" className="block text-sm text-[#0F2D4A] py-1 hover:underline">Paxofi Agent</a>
+                    <hr className="border-gray-100 my-1" />
+                    <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Solutions</p>
+                    <a href="#" className="block text-sm text-[#0F2D4A] py-1 hover:underline">Startups</a>
+                    <a href="#" className="block text-sm text-[#0F2D4A] py-1 hover:underline">SMEs</a>
+                    <a href="#" className="block text-sm text-[#0F2D4A] py-1 hover:underline">Enterprises</a>
+                    <a href="#" className="block text-sm text-[#0F2D4A] py-1 hover:underline">Developers</a>
+                    <a href="#" className="block text-sm text-[#0F2D4A] py-1 hover:underline">Government</a>
+                    <hr className="border-gray-100 my-1" />
+                    <a href="#" className="block text-sm text-[#0F2D4A] py-1 hover:underline">Pricing</a>
+                    <a href="#" className="block text-sm text-[#0F2D4A] py-1 hover:underline">Company</a>
+                    <a href="/" className="mt-2 bg-[#0F2D4A] text-white px-5 py-2 rounded-xl text-sm font-semibold block text-center">About us</a>
+                </div>
             </nav>
 
             {/* HERO */}
             <div
-                className="w-full px-8 lg:px-20 py-24 lg:py-32 flex flex-row items-center justify-between gap-12"
+                className="w-full px-6 lg:px-20 py-16 lg:py-32 flex flex-col md:flex-row items-center justify-between gap-12"
                 style={{
                     backgroundImage: 'url(/HeroBg.png)',
                     backgroundSize: 'cover',
