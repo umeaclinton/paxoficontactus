@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function ContactUs() {
     return (
-        <div className="min-h-screen bg-white font-inter overflow-x-hidden">
+        <div className="min-h-screen bg-white font-inter overflow-x-hidden" style={{minWidth: '1024px'}}>
 
             {/* NAVBAR */}
             <nav className="flex justify-between items-center px-6 lg:px-16 py-4 border-b border-gray-200">
@@ -10,20 +10,20 @@ export default function ContactUs() {
                     <img src="/Image1.png" alt="Paxofi Logo" className="w-10 h-10" />
                     <span className="text-[#0F2D4A] text-xl font-bold">PAXOFI</span>
                 </div>
-                <div className="hidden md:flex items-center gap-6 text-[#45556C] font-medium text-sm">
+                <div className="flex items-center gap-6 text-[#45556C] font-medium text-sm">
                     <a href="#" className="flex items-center gap-1">Products <span className="opacity-50">▾</span></a>
                     <a href="#" className="flex items-center gap-1">Solutions <span className="opacity-50">▾</span></a>
                     <a href="#">Pricing</a>
                     <a href="#">Company</a>
                 </div>
                 <a href="/" className="bg-[#0F2D4A] text-white px-5 py-2 rounded-xl text-sm font-semibold hover:bg-[#1a4369] transition">
-                    Contact us
+                    About us
                 </a>
             </nav>
 
             {/* HERO */}
             <div
-                className="w-full px-6 lg:px-16 py-16 lg:py-24 flex flex-col lg:flex-row items-center justify-between gap-10"
+                className="w-full px-8 lg:px-20 py-24 lg:py-32 flex flex-row items-center justify-between gap-12"
                 style={{
                     backgroundImage: 'url(/HeroBg.png)',
                     backgroundSize: 'cover',
@@ -59,16 +59,14 @@ export default function ContactUs() {
                 </div>
 
                 {/* Right - crm-assistant as CSS background with hero-stat image at bottom */}
-                <div
-                    className="w-full lg:w-[480px] shrink-0 rounded-2xl shadow-2xl relative flex flex-col justify-end"
-                    style={{
-                        backgroundImage: 'url(/crm-assistant.png)',
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center top',
-                        backgroundRepeat: 'no-repeat',
-                        minHeight: '380px',
-                    }}
-                >
+                <div className="shrink-0 relative flex flex-col justify-end rounded-2xl shadow-2xl overflow-hidden" style={{
+                    backgroundImage: 'url(/crm-assistant.png)',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center top',
+                    backgroundRepeat: 'no-repeat',
+                    width: '420px',
+                    minHeight: '460px',
+                }}>
                     {/* hero-stat image overlaid at the bottom */}
                     <img
                         src="/hero-stat.png"
