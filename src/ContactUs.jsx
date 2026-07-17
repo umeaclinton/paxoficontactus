@@ -22,8 +22,27 @@ export default function ContactUs() {
             </nav>
 
             {/* HERO */}
-            <div className="w-full">
-                <img src="/Section.png.png" alt="Hero Section" className="w-full h-auto object-cover block" />
+            <div className="w-full bg-[#0F2D4A] px-6 lg:px-16 py-20 flex flex-col lg:flex-row items-center justify-between gap-12">
+                <div className="flex flex-col gap-6 max-w-xl">
+                    <h1 className="text-white text-4xl lg:text-5xl font-bold leading-tight">
+                        Let's Build Africa's <br />
+                        <span className="text-[#4FC3F7]">Digital Future</span> Together
+                    </h1>
+                    <p className="text-[#94A3B8] text-lg leading-relaxed">
+                        Whether you're integrating payments, verifying identities, registering a business, accessing APIs, or exploring cloud infrastructure, our team is ready to help you find the right solution.
+                    </p>
+                    <div className="flex items-center gap-4 mt-2">
+                        <button className="bg-[#2563EB] hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg flex items-center gap-2 transition cursor-pointer">
+                            Get Quick Help →
+                        </button>
+                        <button className="border border-white text-white font-semibold px-6 py-3 rounded-lg hover:bg-white hover:text-[#0F2D4A] transition cursor-pointer">
+                            View Products ↗
+                        </button>
+                    </div>
+                </div>
+                <div className="w-full lg:w-[480px] shrink-0">
+                    <img src="/Section.png.png" alt="Hero Visual" className="w-full h-auto rounded-2xl object-cover" />
+                </div>
             </div>
 
             {/* CONTACT CARDS */}
