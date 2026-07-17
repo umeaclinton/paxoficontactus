@@ -173,32 +173,39 @@ export default function ContactUs() {
             <div className="bg-[#EFF6FF] px-6 lg:px-16 py-16">
                 <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
                     <div className="bg-white p-6 rounded-2xl shadow-sm flex flex-col items-start border border-gray-100">
-                        <div className="bg-[#EFF6FF] w-11 h-11 rounded-xl flex items-center justify-center mb-4">
+                        <a href="tel:+2349014718315" className="bg-[#EFF6FF] w-11 h-11 rounded-xl flex items-center justify-center mb-4 hover:bg-blue-100 transition cursor-pointer">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0F2D4A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                        </div>
+                        </a>
                         <h3 className="text-[#0F172B] font-semibold text-lg">Call Sales</h3>
                         <p className="text-[#62748E] text-sm mt-1 mb-4">Interested in Paxofi's solutions?</p>
-                        <p className="text-[#1E6FA8] text-sm font-medium">+234 901 471 8315</p>
+                        <a href="tel:+2349014718315" className="text-[#1E6FA8] text-sm font-medium hover:underline">+234 901 471 8315</a>
                         <p className="text-[#1A4862] text-xs mt-1">Monday – Friday<br />8:00 AM – 6:00 PM (WAT)</p>
                     </div>
                     <div className="bg-white p-6 rounded-2xl shadow-sm flex flex-col items-start border border-gray-100">
-                        <div className="bg-[#EFF6FF] w-11 h-11 rounded-xl flex items-center justify-center mb-4">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0F2D4A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <div className="relative group mb-4">
+                            <button className="bg-[#EFF6FF] w-11 h-11 rounded-xl flex items-center justify-center hover:bg-blue-100 transition cursor-pointer">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0F2D4A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </button>
+                            <div className="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-100 rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
+                                <p className="px-4 py-1 text-xs font-semibold text-gray-400 uppercase">Who to contact?</p>
+                                <a href="mailto:hello@paxofi.com" className="block px-4 py-2 text-sm text-[#0F2D4A] hover:bg-[#EFF6FF]">General Enquiries</a>
+                                <a href="mailto:support@paxofi.com" className="block px-4 py-2 text-sm text-[#0F2D4A] hover:bg-[#EFF6FF]">Technical Support</a>
+                            </div>
                         </div>
                         <h3 className="text-[#0F172B] font-semibold text-lg">Email Support</h3>
                         <p className="text-[#62748E] text-sm mt-1 mb-4">Reach the right team directly.</p>
-                        <p className="text-[#1E6FA8] text-sm font-medium">hello@paxofi.com</p>
+                        <a href="mailto:hello@paxofi.com" className="text-[#1E6FA8] text-sm font-medium hover:underline">hello@paxofi.com</a>
                         <p className="text-[#1A4862] text-xs mb-2">General Enquiries</p>
-                        <p className="text-[#1E6FA8] text-sm font-medium">support@paxofi.com</p>
+                        <a href="mailto:support@paxofi.com" className="text-[#1E6FA8] text-sm font-medium hover:underline">support@paxofi.com</a>
                         <p className="text-[#1A4862] text-xs">Technical Support</p>
                     </div>
                     <div className="bg-white p-6 rounded-2xl shadow-sm flex flex-col items-start border border-gray-100">
-                        <div className="bg-[#EFF6FF] w-11 h-11 rounded-xl flex items-center justify-center mb-4">
+                        <a href="https://maps.google.com/?q=Lagos,+Nigeria" target="_blank" rel="noopener noreferrer" className="bg-[#EFF6FF] w-11 h-11 rounded-xl flex items-center justify-center mb-4 hover:bg-blue-100 transition cursor-pointer">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0F2D4A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                        </div>
+                        </a>
                         <h3 className="text-[#0F172B] font-semibold text-lg">Visit Our Office</h3>
                         <p className="text-[#62748E] text-sm mt-1 mb-4">Paxofi Headquarters</p>
-                        <p className="text-[#1E6FA8] text-sm font-medium">Lagos, Nigeria</p>
+                        <a href="https://maps.google.com/?q=Lagos,+Nigeria" target="_blank" rel="noopener noreferrer" className="text-[#1E6FA8] text-sm font-medium hover:underline">Lagos, Nigeria</a>
                         <p className="text-[#1A4862] text-xs mb-6">Supporting businesses across Africa.</p>
                         <a href="#" className="text-[#0F2D4A] font-semibold text-sm flex items-center gap-1 mt-auto">Get Directions <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
                     </div>
