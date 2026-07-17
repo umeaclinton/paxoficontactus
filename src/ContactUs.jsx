@@ -16,9 +16,9 @@ export default function ContactUs() {
                     <a href="#">Pricing</a>
                     <a href="#">Company</a>
                 </div>
-                <button className="bg-[#0F2D4A] text-white px-5 py-2 rounded-xl text-sm font-semibold">
+                <a href="/" className="bg-[#0F2D4A] text-white px-5 py-2 rounded-xl text-sm font-semibold hover:bg-[#1a4369] transition">
                     Contact us
-                </button>
+                </a>
             </nav>
 
             {/* HERO */}
@@ -47,14 +47,14 @@ export default function ContactUs() {
 
                     {/* Buttons */}
                     <div className="flex flex-wrap items-center gap-4 mt-2">
-                        <button className="bg-[#2563EB] hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg flex items-center gap-2 transition cursor-pointer">
+                        <a href="/" className="bg-[#2563EB] hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg flex items-center gap-2 transition cursor-pointer">
                             Get Quick Help
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                        </button>
-                        <button className="border border-[#94A3B8] text-white font-semibold px-6 py-3 rounded-lg hover:bg-white hover:text-[#0F2D4A] transition cursor-pointer flex items-center gap-2">
+                        </a>
+                        <a href="/" className="border border-[#94A3B8] text-white font-semibold px-6 py-3 rounded-lg hover:bg-white hover:text-[#0F2D4A] transition cursor-pointer flex items-center gap-2">
                             View Products
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-                        </button>
+                        </a>
                     </div>
                 </div>
 
@@ -159,9 +159,9 @@ export default function ContactUs() {
                             <input type="checkbox" className="w-5 h-5 rounded border-gray-300" />
                             <span className="text-[#0F2D4A] text-sm">I agree to receive communications from paxofi.</span>
                         </div>
-                        <button type="button" className="bg-[#0F2D4A] text-white font-semibold rounded-xl px-8 py-3 w-fit flex items-center gap-2 hover:bg-[#1a4369] transition">
+                        <a href="/" className="bg-[#0F2D4A] text-white font-semibold rounded-xl px-8 py-3 w-fit flex items-center gap-2 hover:bg-[#1a4369] transition">
                             Contact Paxofi <span>→</span>
-                        </button>
+                        </a>
                         <p className="text-xs text-gray-400 mt-2">Your information is securely encrypted and handled in accordance with our Privacy & Policy</p>
                     </form>
 
@@ -190,9 +190,9 @@ export default function ContactUs() {
                                     <p className="text-[#62748E] text-sm">Monday – Friday: 8:00 AM – 6:00 PM WAT</p>
                                 </div>
                             </div>
-                            <button className="w-full py-3 mt-2 border border-[#0F2D4A] rounded-xl text-[#0F2D4A] font-semibold text-sm hover:bg-gray-50 transition flex items-center justify-center gap-2">
+                            <a href="/" className="w-full py-3 mt-2 border border-[#0F2D4A] rounded-xl text-[#0F2D4A] font-semibold text-sm hover:bg-gray-50 transition flex items-center justify-center gap-2">
                                 Get Directions <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-                            </button>
+                            </a>
                         </div>
                     </div>
 
