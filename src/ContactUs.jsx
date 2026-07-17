@@ -124,7 +124,7 @@ export default function ContactUs() {
                     <div className="flex flex-col gap-6">
                         <div className="w-full h-[240px] rounded-2xl overflow-hidden shadow-sm">
                             <img
-                                src="/Map.png"
+                                src="/MapMakerLagosNigeriaStandard.png"
                                 alt="Our Location in Lagos"
                                 className="w-full h-full object-cover"
                             />
