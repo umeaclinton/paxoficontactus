@@ -2,10 +2,10 @@ import React from 'react';
 
 export default function ContactUs() {
     return (
-        <div className="min-h-screen bg-white font-inter">
+        <div className="min-h-screen bg-white font-inter overflow-x-hidden">
 
             {/* NAVBAR */}
-            <nav className="flex justify-between items-center px-6 lg:px-20 py-4 border-b border-gray-200">
+            <nav className="flex justify-between items-center px-6 lg:px-16 py-4 border-b border-gray-200">
                 <div className="flex items-center gap-2">
                     <img src="/Image1.png" alt="Paxofi Logo" className="w-10 h-10" />
                     <span className="text-[#0F2D4A] text-xl font-bold">PAXOFI</span>
@@ -22,13 +22,13 @@ export default function ContactUs() {
             </nav>
 
             {/* HERO */}
-            <div className="px-6 lg:px-20 py-12">
-                <img src="/Section.png.png" alt="Hero Section" className="w-full h-auto object-cover rounded-2xl" />
+            <div className="w-full">
+                <img src="/Section.png.png" alt="Hero Section" className="w-full h-auto object-cover block" />
             </div>
 
             {/* CONTACT CARDS */}
-            <div className="bg-[#EFF6FF] px-6 lg:px-20 py-16">
-                <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+            <div className="bg-[#EFF6FF] px-6 lg:px-16 py-16">
+                <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
                     <div className="bg-white p-6 rounded-2xl shadow-sm flex flex-col items-start border border-gray-100">
                         <div className="bg-[#EFF6FF] w-11 h-11 rounded-xl flex items-center justify-center mb-4">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0F2D4A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
@@ -71,12 +71,12 @@ export default function ContactUs() {
             </div>
 
             {/* FORM SECTION */}
-            <div className="px-6 lg:px-20 py-20 bg-white border-b border-gray-200">
-                <div className="max-w-6xl mx-auto flex flex-col gap-4 items-center text-center mb-12">
+            <div className="px-6 lg:px-16 py-20 bg-white border-b border-gray-200">
+                <div className="max-w-screen-xl mx-auto flex flex-col gap-4 items-center text-center mb-12">
                     <h2 className="text-[#0F172B] text-3xl md:text-4xl font-semibold">Tell Us About Your Issues</h2>
                     <p className="text-[#62748E] text-base max-w-2xl">Complete the form below and our team will connect you with the appropriate department.</p>
                 </div>
-                <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div className="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
 
                     {/* Form */}
                     <form className="flex flex-col gap-6">
@@ -155,8 +155,8 @@ export default function ContactUs() {
             </div>
 
             {/* FOOTER */}
-            <footer className="bg-[#EFF6FF] px-6 lg:px-20 py-16">
-                <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 justify-between">
+            <footer className="bg-[#EFF6FF] px-6 lg:px-16 py-16">
+                <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 justify-between">
                     <div className="flex flex-col gap-4 lg:col-span-2 pr-8">
                         <div className="flex items-center gap-2">
                             <img src="/Image1.png" alt="Paxofi Logo" className="w-10 h-10" />
@@ -195,7 +195,7 @@ export default function ContactUs() {
                         <a href="#" className="text-[#0F2D4A] text-sm hover:underline">Contact Us</a>
                     </div>
                 </div>
-                <div className="max-w-7xl mx-auto border-t border-blue-200 mt-12 pt-6">
+                <div className="max-w-screen-xl mx-auto border-t border-blue-200 mt-12 pt-6">
                     <p className="text-[#0F2D4A] text-xs">© 2026 Paxofi. All rights reserved..</p>
                 </div>
             </footer>
