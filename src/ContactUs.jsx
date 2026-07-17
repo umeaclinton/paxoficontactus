@@ -22,8 +22,58 @@ export default function ContactUs() {
             </nav>
 
             {/* HERO */}
-            <div className="w-full">
-                <img src="/Section.png.png" alt="Hero Section" className="w-full h-auto object-cover block" />
+            <div className="w-full bg-[#0F2D4A] px-6 lg:px-16 py-16 lg:py-24 flex flex-col lg:flex-row items-center justify-between gap-10">
+
+                {/* Left - Text Content */}
+                <div className="flex flex-col gap-6 max-w-xl">
+
+                    {/* Stats row */}
+                    <div className="flex items-center gap-6">
+                        <div>
+                            <p className="text-white text-2xl font-bold">3,000+</p>
+                            <p className="text-[#94A3B8] text-xs">Active Businesses</p>
+                        </div>
+                        <div className="w-px h-8 bg-[#334155]"></div>
+                        <div>
+                            <p className="text-white text-2xl font-bold">₦2.4B+</p>
+                            <p className="text-[#94A3B8] text-xs">Transactions Processed</p>
+                        </div>
+                        <div className="w-px h-8 bg-[#334155]"></div>
+                        <div>
+                            <p className="text-white text-2xl font-bold">99.99%</p>
+                            <p className="text-[#94A3B8] text-xs">Uptime Guaranteed</p>
+                        </div>
+                    </div>
+
+                    {/* Heading */}
+                    <h1 className="text-white text-4xl lg:text-5xl font-bold leading-tight">
+                        Let's Build Africa's <br />
+                        <span className="text-[#4FC3F7]">Digital Future</span> Together
+                    </h1>
+
+                    {/* Subtext */}
+                    <p className="text-[#94A3B8] text-base lg:text-lg leading-relaxed">
+                        Whether you're integrating payments, verifying identities, registering a business, accessing APIs, or exploring cloud infrastructure, our team is ready to help you find the right solution.
+                    </p>
+
+                    {/* Buttons */}
+                    <div className="flex flex-wrap items-center gap-4 mt-2">
+                        <button className="bg-[#2563EB] hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg flex items-center gap-2 transition cursor-pointer">
+                            Get Quick Help
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </button>
+                        <button className="border border-[#94A3B8] text-white font-semibold px-6 py-3 rounded-lg hover:bg-white hover:text-[#0F2D4A] transition cursor-pointer flex items-center gap-2">
+                            View Products
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                        </button>
+                    </div>
+                </div>
+
+                {/* Right - Image */}
+                <div className="w-full lg:w-[480px] shrink-0 rounded-2xl overflow-hidden shadow-2xl">
+                    <img src="/Section.png.png" alt="Hero Visual" className="w-full h-auto object-cover" />
+                </div>
+
             </div>
 
             {/* CONTACT CARDS */}
