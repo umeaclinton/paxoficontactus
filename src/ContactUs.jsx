@@ -58,7 +58,7 @@ export default function ContactUs() {
                     </div>
                 </div>
 
-                {/* Right - CSS Background with stat overlay */}
+                {/* Right - crm-assistant as CSS background with hero-stat image at bottom */}
                 <div
                     className="w-full lg:w-[480px] shrink-0 rounded-2xl shadow-2xl relative flex flex-col justify-end"
                     style={{
@@ -69,30 +69,16 @@ export default function ContactUs() {
                         minHeight: '380px',
                     }}
                 >
-                    {/* Stat Cards overlaid at the bottom */}
-                    <div className="p-4 grid grid-cols-2 gap-3">
-
-                        <div className="bg-white bg-opacity-90 backdrop-blur-sm rounded-xl px-4 py-3 flex flex-col gap-1 shadow-md">
-                            <p className="text-[#0F2D4A] text-xl font-bold">3,000+</p>
-                            <p className="text-[#62748E] text-xs">Active Businesses</p>
-                        </div>
-
-                        <div className="bg-white bg-opacity-90 backdrop-blur-sm rounded-xl px-4 py-3 flex flex-col gap-1 shadow-md">
-                            <p className="text-[#0F2D4A] text-xl font-bold">₦2.4B+</p>
-                            <p className="text-[#62748E] text-xs">Transactions Processed</p>
-                        </div>
-
-                        <div className="bg-white bg-opacity-90 backdrop-blur-sm rounded-xl px-4 py-3 flex flex-col gap-1 shadow-md">
-                            <p className="text-[#0F2D4A] text-xl font-bold">1M+</p>
-                            <p className="text-[#62748E] text-xs">Transactions Completed</p>
-                        </div>
-
-                        <div className="bg-white bg-opacity-90 backdrop-blur-sm rounded-xl px-4 py-3 flex flex-col gap-1 shadow-md">
-                            <p className="text-[#0F2D4A] text-xl font-bold">99.99%</p>
-                            <p className="text-[#62748E] text-xs">Uptime Guaranteed</p>
-                        </div>
-
-                    </div>
+                    {/* hero-stat image overlaid at the bottom */}
+                    <img
+                        src="/hero-stat.png"
+                        alt=""
+                        className="w-full object-cover"
+                        draggable="false"
+                        onDragStart={(e) => e.preventDefault()}
+                        onContextMenu={(e) => e.preventDefault()}
+                        style={{ pointerEvents: 'none', userSelect: 'none' }}
+                    />
                 </div>
 
             </div>
