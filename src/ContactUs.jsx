@@ -22,18 +22,26 @@ export default function ContactUs() {
             </nav>
 
             {/* HERO */}
-            <div className="w-full bg-[#0F2D4A] px-6 lg:px-16 py-16 lg:py-24 flex flex-col lg:flex-row items-center justify-between gap-10">
+            <div
+                className="w-full px-6 lg:px-16 py-16 lg:py-24 flex flex-col lg:flex-row items-center justify-between gap-10"
+                style={{
+                    backgroundImage: 'url(/HeroBg.png)',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat',
+                }}
+            >
 
                 {/* Left - Text Content */}
-                <div className="flex flex-col gap-6 max-w-xl">
+                <div className="flex flex-col gap-6 max-w-xl select-text">
                     {/* Heading */}
-                    <h1 className="text-white text-4xl lg:text-5xl font-bold leading-tight">
+                    <h1 className="text-white text-4xl lg:text-5xl font-bold leading-tight select-text">
                         Let's Build Africa's <br />
                         <span className="text-[#4FC3F7]">Digital Future</span> Together
                     </h1>
 
                     {/* Subtext */}
-                    <p className="text-[#94A3B8] text-base lg:text-lg leading-relaxed">
+                    <p className="text-[#94A3B8] text-base lg:text-lg leading-relaxed select-text">
                         Whether you're integrating payments, verifying identities, registering a business, accessing APIs, or exploring cloud infrastructure, our team is ready to help you find the right solution.
                     </p>
 
@@ -50,9 +58,15 @@ export default function ContactUs() {
                     </div>
                 </div>
 
-                {/* Right - Image */}
+                {/* Right - Image (non-draggable) */}
                 <div className="w-full lg:w-[480px] shrink-0 rounded-2xl overflow-hidden shadow-2xl">
-                    <img src="/Section.png.png" alt="Hero Visual" className="w-full h-auto object-cover" />
+                    <img
+                        src="/Section.png.png"
+                        alt="Hero Visual"
+                        className="w-full h-auto object-cover"
+                        draggable="false"
+                        onDragStart={(e) => e.preventDefault()}
+                    />
                 </div>
 
             </div>
