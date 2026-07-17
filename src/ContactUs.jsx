@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 export default function ContactUs() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
+    const [mobileSolutionsOpen, setMobileSolutionsOpen] = useState(false);
 
     return (
         <div className="min-h-screen bg-white font-inter overflow-x-hidden">
@@ -65,20 +67,41 @@ export default function ContactUs() {
 
                 {/* Mobile Menu */}
                 <div className={`${isMobileMenuOpen ? 'flex' : 'hidden'} absolute top-full left-0 right-0 bg-white border-b border-gray-200 shadow-lg z-50 px-6 py-6 flex-col gap-4`}>
-                    <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Products</p>
-                    <a href="#" className="block text-sm text-[#0F2D4A] py-1 hover:underline">Paxofi Pay</a>
-                    <a href="#" className="block text-sm text-[#0F2D4A] py-1 hover:underline">Paxofi Verify</a>
-                    <a href="#" className="block text-sm text-[#0F2D4A] py-1 hover:underline">Paxofi Business</a>
-                    <a href="#" className="block text-sm text-[#0F2D4A] py-1 hover:underline">Paxofi API</a>
-                    <a href="#" className="block text-sm text-[#0F2D4A] py-1 hover:underline">Paxofi Cloud</a>
-                    <a href="#" className="block text-sm text-[#0F2D4A] py-1 hover:underline">Paxofi Agent</a>
+                    {/* Mobile Products Dropdown */}
+                    <div>
+                        <button 
+                            onClick={() => setMobileProductsOpen(!mobileProductsOpen)}
+                            className="flex items-center justify-between w-full text-left font-semibold text-[#0F2D4A] py-2"
+                        >
+                            Products <span className={`transition-transform ${mobileProductsOpen ? 'rotate-180' : ''}`}>▾</span>
+                        </button>
+                        <div className={`${mobileProductsOpen ? 'flex' : 'hidden'} flex-col gap-2 pl-4 mt-2`}>
+                            <a href="#" className="block text-sm text-[#45556C] hover:text-[#0F2D4A]">Paxofi Pay</a>
+                            <a href="#" className="block text-sm text-[#45556C] hover:text-[#0F2D4A]">Paxofi Verify</a>
+                            <a href="#" className="block text-sm text-[#45556C] hover:text-[#0F2D4A]">Paxofi Business</a>
+                            <a href="#" className="block text-sm text-[#45556C] hover:text-[#0F2D4A]">Paxofi API</a>
+                            <a href="#" className="block text-sm text-[#45556C] hover:text-[#0F2D4A]">Paxofi Cloud</a>
+                            <a href="#" className="block text-sm text-[#45556C] hover:text-[#0F2D4A]">Paxofi Agent</a>
+                        </div>
+                    </div>
                     <hr className="border-gray-100 my-1" />
-                    <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Solutions</p>
-                    <a href="#" className="block text-sm text-[#0F2D4A] py-1 hover:underline">Startups</a>
-                    <a href="#" className="block text-sm text-[#0F2D4A] py-1 hover:underline">SMEs</a>
-                    <a href="#" className="block text-sm text-[#0F2D4A] py-1 hover:underline">Enterprises</a>
-                    <a href="#" className="block text-sm text-[#0F2D4A] py-1 hover:underline">Developers</a>
-                    <a href="#" className="block text-sm text-[#0F2D4A] py-1 hover:underline">Government</a>
+
+                    {/* Mobile Solutions Dropdown */}
+                    <div>
+                        <button 
+                            onClick={() => setMobileSolutionsOpen(!mobileSolutionsOpen)}
+                            className="flex items-center justify-between w-full text-left font-semibold text-[#0F2D4A] py-2"
+                        >
+                            Solutions <span className={`transition-transform ${mobileSolutionsOpen ? 'rotate-180' : ''}`}>▾</span>
+                        </button>
+                        <div className={`${mobileSolutionsOpen ? 'flex' : 'hidden'} flex-col gap-2 pl-4 mt-2`}>
+                            <a href="#" className="block text-sm text-[#45556C] hover:text-[#0F2D4A]">Startups</a>
+                            <a href="#" className="block text-sm text-[#45556C] hover:text-[#0F2D4A]">SMEs</a>
+                            <a href="#" className="block text-sm text-[#45556C] hover:text-[#0F2D4A]">Enterprises</a>
+                            <a href="#" className="block text-sm text-[#45556C] hover:text-[#0F2D4A]">Developers</a>
+                            <a href="#" className="block text-sm text-[#45556C] hover:text-[#0F2D4A]">Government</a>
+                        </div>
+                    </div>
                     <hr className="border-gray-100 my-1" />
                     <a href="#" className="block text-sm text-[#0F2D4A] py-1 hover:underline">Pricing</a>
                     <a href="#" className="block text-sm text-[#0F2D4A] py-1 hover:underline">Company</a>
