@@ -24,12 +24,12 @@ export default function ContactUs() {
                             Products <span className="opacity-50">▾</span>
                         </button>
                         <div className="absolute top-full left-0 mt-2 w-44 bg-white border border-gray-100 rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
-                            <a href="#" className="block px-4 py-2 text-sm text-[#0F2D4A] hover:bg-[#EFF6FF]">Paxofi Pay</a>
-                            <a href="#" className="block px-4 py-2 text-sm text-[#0F2D4A] hover:bg-[#EFF6FF]">Paxofi Verify</a>
-                            <a href="#" className="block px-4 py-2 text-sm text-[#0F2D4A] hover:bg-[#EFF6FF]">Paxofi Business</a>
-                            <a href="#" className="block px-4 py-2 text-sm text-[#0F2D4A] hover:bg-[#EFF6FF]">Paxofi API</a>
-                            <a href="#" className="block px-4 py-2 text-sm text-[#0F2D4A] hover:bg-[#EFF6FF]">Paxofi Cloud</a>
-                            <a href="#" className="block px-4 py-2 text-sm text-[#0F2D4A] hover:bg-[#EFF6FF]">Paxofi Agent</a>
+                            <a href="/" className="block px-4 py-2 text-sm text-[#0F2D4A] hover:bg-[#EFF6FF]">Paxofi Pay</a>
+                            <a href="/" className="block px-4 py-2 text-sm text-[#0F2D4A] hover:bg-[#EFF6FF]">Paxofi Verify</a>
+                            <a href="/" className="block px-4 py-2 text-sm text-[#0F2D4A] hover:bg-[#EFF6FF]">Paxofi Business</a>
+                            <a href="/" className="block px-4 py-2 text-sm text-[#0F2D4A] hover:bg-[#EFF6FF]">Paxofi API</a>
+                            <a href="/" className="block px-4 py-2 text-sm text-[#0F2D4A] hover:bg-[#EFF6FF]">Paxofi Cloud</a>
+                            <a href="/" className="block px-4 py-2 text-sm text-[#0F2D4A] hover:bg-[#EFF6FF]">Paxofi Agent</a>
                         </div>
                     </div>
 
@@ -39,16 +39,16 @@ export default function ContactUs() {
                             Solutions <span className="opacity-50">▾</span>
                         </button>
                         <div className="absolute top-full left-0 mt-2 w-40 bg-white border border-gray-100 rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
-                            <a href="#" className="block px-4 py-2 text-sm text-[#0F2D4A] hover:bg-[#EFF6FF]">Startups</a>
-                            <a href="#" className="block px-4 py-2 text-sm text-[#0F2D4A] hover:bg-[#EFF6FF]">SMEs</a>
-                            <a href="#" className="block px-4 py-2 text-sm text-[#0F2D4A] hover:bg-[#EFF6FF]">Enterprises</a>
-                            <a href="#" className="block px-4 py-2 text-sm text-[#0F2D4A] hover:bg-[#EFF6FF]">Developers</a>
-                            <a href="#" className="block px-4 py-2 text-sm text-[#0F2D4A] hover:bg-[#EFF6FF]">Government</a>
+                            <a href="/" className="block px-4 py-2 text-sm text-[#0F2D4A] hover:bg-[#EFF6FF]">Startups</a>
+                            <a href="/" className="block px-4 py-2 text-sm text-[#0F2D4A] hover:bg-[#EFF6FF]">SMEs</a>
+                            <a href="/" className="block px-4 py-2 text-sm text-[#0F2D4A] hover:bg-[#EFF6FF]">Enterprises</a>
+                            <a href="/" className="block px-4 py-2 text-sm text-[#0F2D4A] hover:bg-[#EFF6FF]">Developers</a>
+                            <a href="/" className="block px-4 py-2 text-sm text-[#0F2D4A] hover:bg-[#EFF6FF]">Government</a>
                         </div>
                     </div>
 
-                    <a href="#" className="hover:text-[#0F2D4A] transition">Pricing</a>
-                    <a href="#" className="hover:text-[#0F2D4A] transition">Company</a>
+                    <a href="/" className="hover:text-[#0F2D4A] transition">Pricing</a>
+                    <a href="/" className="hover:text-[#0F2D4A] transition">Company</a>
                 </div>
 
                 <a href="/" className="hidden md:inline-block bg-[#0F2D4A] text-white px-5 py-2 rounded-xl text-sm font-semibold hover:bg-[#1a4369] transition">
@@ -76,12 +76,12 @@ export default function ContactUs() {
                             Products <span className={`transition-transform ${mobileProductsOpen ? 'rotate-180' : ''}`}>▾</span>
                         </button>
                         <div className={`${mobileProductsOpen ? 'flex' : 'hidden'} flex-col gap-2 pl-4 mt-2`}>
-                            <a href="#" className="block text-sm text-[#45556C] hover:text-[#0F2D4A]">Paxofi Pay</a>
-                            <a href="#" className="block text-sm text-[#45556C] hover:text-[#0F2D4A]">Paxofi Verify</a>
-                            <a href="#" className="block text-sm text-[#45556C] hover:text-[#0F2D4A]">Paxofi Business</a>
-                            <a href="#" className="block text-sm text-[#45556C] hover:text-[#0F2D4A]">Paxofi API</a>
-                            <a href="#" className="block text-sm text-[#45556C] hover:text-[#0F2D4A]">Paxofi Cloud</a>
-                            <a href="#" className="block text-sm text-[#45556C] hover:text-[#0F2D4A]">Paxofi Agent</a>
+                            <a href="/" className="block text-sm text-[#45556C] hover:text-[#0F2D4A]">Paxofi Pay</a>
+                            <a href="/" className="block text-sm text-[#45556C] hover:text-[#0F2D4A]">Paxofi Verify</a>
+                            <a href="/" className="block text-sm text-[#45556C] hover:text-[#0F2D4A]">Paxofi Business</a>
+                            <a href="/" className="block text-sm text-[#45556C] hover:text-[#0F2D4A]">Paxofi API</a>
+                            <a href="/" className="block text-sm text-[#45556C] hover:text-[#0F2D4A]">Paxofi Cloud</a>
+                            <a href="/" className="block text-sm text-[#45556C] hover:text-[#0F2D4A]">Paxofi Agent</a>
                         </div>
                     </div>
                     <hr className="border-gray-100 my-1" />
@@ -95,16 +95,16 @@ export default function ContactUs() {
                             Solutions <span className={`transition-transform ${mobileSolutionsOpen ? 'rotate-180' : ''}`}>▾</span>
                         </button>
                         <div className={`${mobileSolutionsOpen ? 'flex' : 'hidden'} flex-col gap-2 pl-4 mt-2`}>
-                            <a href="#" className="block text-sm text-[#45556C] hover:text-[#0F2D4A]">Startups</a>
-                            <a href="#" className="block text-sm text-[#45556C] hover:text-[#0F2D4A]">SMEs</a>
-                            <a href="#" className="block text-sm text-[#45556C] hover:text-[#0F2D4A]">Enterprises</a>
-                            <a href="#" className="block text-sm text-[#45556C] hover:text-[#0F2D4A]">Developers</a>
-                            <a href="#" className="block text-sm text-[#45556C] hover:text-[#0F2D4A]">Government</a>
+                            <a href="/" className="block text-sm text-[#45556C] hover:text-[#0F2D4A]">Startups</a>
+                            <a href="/" className="block text-sm text-[#45556C] hover:text-[#0F2D4A]">SMEs</a>
+                            <a href="/" className="block text-sm text-[#45556C] hover:text-[#0F2D4A]">Enterprises</a>
+                            <a href="/" className="block text-sm text-[#45556C] hover:text-[#0F2D4A]">Developers</a>
+                            <a href="/" className="block text-sm text-[#45556C] hover:text-[#0F2D4A]">Government</a>
                         </div>
                     </div>
                     <hr className="border-gray-100 my-1" />
-                    <a href="#" className="block text-sm text-[#0F2D4A] py-1 hover:underline">Pricing</a>
-                    <a href="#" className="block text-sm text-[#0F2D4A] py-1 hover:underline">Company</a>
+                    <a href="/" className="block text-sm text-[#0F2D4A] py-1 hover:underline">Pricing</a>
+                    <a href="/" className="block text-sm text-[#0F2D4A] py-1 hover:underline">Company</a>
                     <a href="/" className="mt-2 bg-[#0F2D4A] text-white px-5 py-2 rounded-xl text-sm font-semibold block text-center">About us</a>
                 </div>
             </nav>
@@ -207,7 +207,7 @@ export default function ContactUs() {
                         <p className="text-[#62748E] text-sm mt-1 mb-4">Paxofi Headquarters</p>
                         <a href="https://maps.google.com/?q=Lagos,+Nigeria" target="_blank" rel="noopener noreferrer" className="text-[#1E6FA8] text-sm font-medium hover:underline">Lagos, Nigeria</a>
                         <p className="text-[#1A4862] text-xs mb-6">Supporting businesses across Africa.</p>
-                        <a href="#" className="text-[#0F2D4A] font-semibold text-sm flex items-center gap-1 mt-auto">Get Directions <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                        <a href="/" className="text-[#0F2D4A] font-semibold text-sm flex items-center gap-1 mt-auto">Get Directions <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
                     </div>
                     <div className="bg-white p-6 rounded-2xl shadow-sm flex flex-col items-start border border-gray-100">
                         <div className="bg-[#EFF6FF] w-11 h-11 rounded-xl flex items-center justify-center mb-4">
@@ -215,7 +215,7 @@ export default function ContactUs() {
                         </div>
                         <h3 className="text-[#0F172B] font-semibold text-lg">Talk to a Product Expert</h3>
                         <p className="text-[#62748E] text-sm mt-1 mb-4">Need help choosing the right solution?</p>
-                        <a href="#" className="text-[#0F2D4A] font-semibold text-sm flex items-center gap-1 mt-auto">Book Consultation <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                        <a href="/" className="text-[#0F2D4A] font-semibold text-sm flex items-center gap-1 mt-auto">Book Consultation <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
                     </div>
                 </div>
             </div>
@@ -322,27 +322,27 @@ export default function ContactUs() {
 
                     <div className="flex flex-col gap-3">
                         <h4 className="text-[#0F2D4A] font-semibold mb-2">Products</h4>
-                        <a href="#" className="text-[#0F2D4A] text-sm hover:underline">Paxofi Pay</a>
-                        <a href="#" className="text-[#0F2D4A] text-sm hover:underline">Paxofi Verify</a>
-                        <a href="#" className="text-[#0F2D4A] text-sm hover:underline">Paxofi Business</a>
-                        <a href="#" className="text-[#0F2D4A] text-sm hover:underline">Paxofi API</a>
-                        <a href="#" className="text-[#0F2D4A] text-sm hover:underline">Paxofi Cloud</a>
-                        <a href="#" className="text-[#0F2D4A] text-sm hover:underline">Paxofi Agent</a>
+                        <a href="/" className="text-[#0F2D4A] text-sm hover:underline">Paxofi Pay</a>
+                        <a href="/" className="text-[#0F2D4A] text-sm hover:underline">Paxofi Verify</a>
+                        <a href="/" className="text-[#0F2D4A] text-sm hover:underline">Paxofi Business</a>
+                        <a href="/" className="text-[#0F2D4A] text-sm hover:underline">Paxofi API</a>
+                        <a href="/" className="text-[#0F2D4A] text-sm hover:underline">Paxofi Cloud</a>
+                        <a href="/" className="text-[#0F2D4A] text-sm hover:underline">Paxofi Agent</a>
                     </div>
                     <div className="flex flex-col gap-3">
                         <h4 className="text-[#0F2D4A] font-semibold mb-2">Solutions</h4>
-                        <a href="#" className="text-[#0F2D4A] text-sm hover:underline">Startups</a>
-                        <a href="#" className="text-[#0F2D4A] text-sm hover:underline">SMEs</a>
-                        <a href="#" className="text-[#0F2D4A] text-sm hover:underline">Enterprises</a>
-                        <a href="#" className="text-[#0F2D4A] text-sm hover:underline">Developers</a>
-                        <a href="#" className="text-[#0F2D4A] text-sm hover:underline">Government</a>
+                        <a href="/" className="text-[#0F2D4A] text-sm hover:underline">Startups</a>
+                        <a href="/" className="text-[#0F2D4A] text-sm hover:underline">SMEs</a>
+                        <a href="/" className="text-[#0F2D4A] text-sm hover:underline">Enterprises</a>
+                        <a href="/" className="text-[#0F2D4A] text-sm hover:underline">Developers</a>
+                        <a href="/" className="text-[#0F2D4A] text-sm hover:underline">Government</a>
                     </div>
                     <div className="flex flex-col gap-3">
                         <h4 className="text-[#0F2D4A] font-semibold mb-2">Company</h4>
-                        <a href="#" className="text-[#0F2D4A] text-sm hover:underline">About Us</a>
-                        <a href="#" className="text-[#0F2D4A] text-sm hover:underline">Careers</a>
-                        <a href="#" className="text-[#0F2D4A] text-sm hover:underline">Blog</a>
-                        <a href="#" className="text-[#0F2D4A] text-sm hover:underline">Contact Us</a>
+                        <a href="/" className="text-[#0F2D4A] text-sm hover:underline">About Us</a>
+                        <a href="/" className="text-[#0F2D4A] text-sm hover:underline">Careers</a>
+                        <a href="/" className="text-[#0F2D4A] text-sm hover:underline">Blog</a>
+                        <a href="/" className="text-[#0F2D4A] text-sm hover:underline">Contact Us</a>
                     </div>
                 </div>
                 <div className="max-w-screen-xl mx-auto border-t border-blue-200 mt-12 pt-6">
