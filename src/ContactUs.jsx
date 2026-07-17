@@ -31,7 +31,7 @@ export default function ContactUs() {
                 <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
                     <div className="bg-white p-6 rounded-2xl shadow-sm flex flex-col items-start border border-gray-100">
                         <div className="bg-[#EFF6FF] w-11 h-11 rounded-xl flex items-center justify-center mb-4">
-                            <span className="text-[#0F2D4A] text-lg">📞</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0F2D4A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                         </div>
                         <h3 className="text-[#0F172B] font-semibold text-lg">Call Sales</h3>
                         <p className="text-[#62748E] text-sm mt-1 mb-4">Interested in Paxofi's solutions?</p>
@@ -40,7 +40,7 @@ export default function ContactUs() {
                     </div>
                     <div className="bg-white p-6 rounded-2xl shadow-sm flex flex-col items-start border border-gray-100">
                         <div className="bg-[#EFF6FF] w-11 h-11 rounded-xl flex items-center justify-center mb-4">
-                            <span className="text-[#0F2D4A] text-lg">✉️</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0F2D4A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                         </div>
                         <h3 className="text-[#0F172B] font-semibold text-lg">Email Support</h3>
                         <p className="text-[#62748E] text-sm mt-1 mb-4">Reach the right team directly.</p>
@@ -51,21 +51,21 @@ export default function ContactUs() {
                     </div>
                     <div className="bg-white p-6 rounded-2xl shadow-sm flex flex-col items-start border border-gray-100">
                         <div className="bg-[#EFF6FF] w-11 h-11 rounded-xl flex items-center justify-center mb-4">
-                            <span className="text-[#0F2D4A] text-lg">📍</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0F2D4A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                         </div>
                         <h3 className="text-[#0F172B] font-semibold text-lg">Visit Our Office</h3>
                         <p className="text-[#62748E] text-sm mt-1 mb-4">Paxofi Headquarters</p>
                         <p className="text-[#1E6FA8] text-sm font-medium">Lagos, Nigeria</p>
                         <p className="text-[#1A4862] text-xs mb-6">Supporting businesses across Africa.</p>
-                        <a href="#" className="text-[#0F2D4A] font-semibold text-sm flex items-center gap-1 mt-auto">Get Directions →</a>
+                        <a href="#" className="text-[#0F2D4A] font-semibold text-sm flex items-center gap-1 mt-auto">Get Directions <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
                     </div>
                     <div className="bg-white p-6 rounded-2xl shadow-sm flex flex-col items-start border border-gray-100">
                         <div className="bg-[#EFF6FF] w-11 h-11 rounded-xl flex items-center justify-center mb-4">
-                            <span className="text-[#0F2D4A] text-lg">🗓️</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0F2D4A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
                         </div>
                         <h3 className="text-[#0F172B] font-semibold text-lg">Talk to a Product Expert</h3>
                         <p className="text-[#62748E] text-sm mt-1 mb-4">Need help choosing the right solution?</p>
-                        <a href="#" className="text-[#0F2D4A] font-semibold text-sm flex items-center gap-1 mt-auto">Book Consultation →</a>
+                        <a href="#" className="text-[#0F2D4A] font-semibold text-sm flex items-center gap-1 mt-auto">Book Consultation <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
                     </div>
                 </div>
             </div>
@@ -132,21 +132,21 @@ export default function ContactUs() {
                         <div className="border border-gray-200 rounded-2xl p-8 flex flex-col gap-6">
                             <h3 className="text-xl font-semibold text-[#0F172B]">Our Location</h3>
                             <div className="flex gap-4 items-start">
-                                <span className="text-gray-400 mt-1">📍</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0F2D4A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                                 <div>
                                     <p className="font-semibold text-[#0F2D4A] text-sm mb-1">Paxofi Headquarters</p>
                                     <p className="text-[#62748E] text-sm leading-relaxed">123 Freedom Way, Victoria Island<br />Lagos, Nigeria</p>
                                 </div>
                             </div>
                             <div className="flex gap-4 items-start">
-                                <span className="text-gray-400 mt-1">🕒</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0F2D4A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
                                 <div>
                                     <p className="font-semibold text-[#0F2D4A] text-sm mb-1">Business Hours</p>
                                     <p className="text-[#62748E] text-sm">Monday – Friday: 8:00 AM – 6:00 PM WAT</p>
                                 </div>
                             </div>
-                            <button className="w-full py-3 mt-2 border border-[#0F2D4A] rounded-xl text-[#0F2D4A] font-semibold text-sm hover:bg-gray-50 transition">
-                                Get Directions ↗
+                            <button className="w-full py-3 mt-2 border border-[#0F2D4A] rounded-xl text-[#0F2D4A] font-semibold text-sm hover:bg-gray-50 transition flex items-center justify-center gap-2">
+                                Get Directions <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                             </button>
                         </div>
                     </div>
