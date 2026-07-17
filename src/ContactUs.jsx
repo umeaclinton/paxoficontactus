@@ -26,25 +26,6 @@ export default function ContactUs() {
 
                 {/* Left - Text Content */}
                 <div className="flex flex-col gap-6 max-w-xl">
-
-                    {/* Stats row */}
-                    <div className="flex items-center gap-6">
-                        <div>
-                            <p className="text-white text-2xl font-bold">3,000+</p>
-                            <p className="text-[#94A3B8] text-xs">Active Businesses</p>
-                        </div>
-                        <div className="w-px h-8 bg-[#334155]"></div>
-                        <div>
-                            <p className="text-white text-2xl font-bold">₦2.4B+</p>
-                            <p className="text-[#94A3B8] text-xs">Transactions Processed</p>
-                        </div>
-                        <div className="w-px h-8 bg-[#334155]"></div>
-                        <div>
-                            <p className="text-white text-2xl font-bold">99.99%</p>
-                            <p className="text-[#94A3B8] text-xs">Uptime Guaranteed</p>
-                        </div>
-                    </div>
-
                     {/* Heading */}
                     <h1 className="text-white text-4xl lg:text-5xl font-bold leading-tight">
                         Let's Build Africa's <br />
