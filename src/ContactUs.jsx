@@ -122,12 +122,9 @@ export default function ContactUs() {
 
                     {/* Map & Info Container */}
                     <div className="flex flex-col gap-6">
-                        <div className="w-full h-[240px] rounded-2xl overflow-hidden shadow-sm">
-                            <img
-                                src="/MapMakerLagosNigeriaStandard.png"
-                                alt="Our Location in Lagos"
-                                className="w-full h-full object-cover"
-                            />
+                        <div className="bg-[#EFF6FF] rounded-2xl h-[240px] flex flex-col items-center justify-center">
+                            <div className="w-12 h-12 bg-[#0F2D4A] rounded-full flex items-center justify-center text-white mb-2 shadow-lg">📍</div>
+                            <p className="text-[#0F2D4A] font-semibold">Lagos, Nigeria</p>
                         </div>
                         <div className="border border-gray-200 rounded-2xl p-8 flex flex-col gap-6">
                             <h3 className="text-xl font-semibold text-[#0F172B]">Our Location</h3>
