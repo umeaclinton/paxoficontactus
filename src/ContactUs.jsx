@@ -272,20 +272,20 @@ export default function ContactUs() {
 
                     {/* Map & Info Container */}
                     <div className="flex flex-col gap-6">
-                        <div className="w-full h-[240px] rounded-2xl overflow-hidden shadow-sm">
+                        <a href="https://maps.google.com/?q=123+Freedom+Way,+Victoria+Island,+Lagos,+Nigeria" target="_blank" rel="noopener noreferrer" className="block w-full h-[240px] rounded-2xl overflow-hidden shadow-sm hover:opacity-90 transition cursor-pointer">
                             <img
                                 src="/Map.png"
                                 alt="Our Location in Lagos"
                                 className="w-full h-full object-cover"
                             />
-                        </div>
+                        </a>
                         <div className="border border-gray-200 rounded-2xl p-8 flex flex-col gap-6">
                             <h3 className="text-xl font-semibold text-[#0F172B]">Our Location</h3>
                             <div className="flex gap-4 items-start">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0F2D4A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                                 <div>
                                     <p className="font-semibold text-[#0F2D4A] text-sm mb-1">Paxofi Headquarters</p>
-                                    <p className="text-[#62748E] text-sm leading-relaxed">123 Freedom Way, Victoria Island<br />Lagos, Nigeria</p>
+                                    <a href="https://maps.google.com/?q=123+Freedom+Way,+Victoria+Island,+Lagos,+Nigeria" target="_blank" rel="noopener noreferrer" className="text-[#62748E] text-sm leading-relaxed hover:text-[#1E6FA8] hover:underline transition block">123 Freedom Way, Victoria Island<br />Lagos, Nigeria</a>
                                 </div>
                             </div>
                             <div className="flex gap-4 items-start">
@@ -295,7 +295,7 @@ export default function ContactUs() {
                                     <p className="text-[#62748E] text-sm">Monday – Friday: 8:00 AM – 6:00 PM WAT</p>
                                 </div>
                             </div>
-                            <a href="/" className="w-full py-3 mt-2 border border-[#0F2D4A] rounded-xl text-[#0F2D4A] font-semibold text-sm hover:bg-gray-50 transition flex items-center justify-center gap-2">
+                            <a href="https://maps.google.com/?q=123+Freedom+Way,+Victoria+Island,+Lagos,+Nigeria" target="_blank" rel="noopener noreferrer" className="w-full py-3 mt-2 border border-[#0F2D4A] rounded-xl text-[#0F2D4A] font-semibold text-sm hover:bg-gray-50 transition flex items-center justify-center gap-2">
                                 Get Directions <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                             </a>
                         </div>
@@ -314,9 +314,9 @@ export default function ContactUs() {
                         </div>
                         <p className="text-[#0F2D4A] text-sm leading-relaxed">Africa's Digital Infrastructure Platform, empowering businesses through payments, identity verification, compliance, APIs, cloud, and document services.</p>
                         <div className="flex gap-3 mt-4">
-                            <div className="w-9 h-9 rounded-lg border border-blue-200 bg-white flex items-center justify-center text-blue-600 font-bold hover:shadow transition cursor-pointer">in</div>
-                            <div className="w-9 h-9 rounded-lg border border-blue-200 bg-white flex items-center justify-center text-blue-600 font-bold hover:shadow transition cursor-pointer">X</div>
-                            <div className="w-9 h-9 rounded-lg border border-blue-200 bg-white flex items-center justify-center text-blue-600 font-bold hover:shadow transition cursor-pointer">f</div>
+                            <a href="/" className="w-9 h-9 rounded-lg border border-blue-200 bg-white flex items-center justify-center text-blue-600 font-bold hover:shadow transition cursor-pointer">in</a>
+                            <a href="/" className="w-9 h-9 rounded-lg border border-blue-200 bg-white flex items-center justify-center text-blue-600 font-bold hover:shadow transition cursor-pointer">X</a>
+                            <a href="/" className="w-9 h-9 rounded-lg border border-blue-200 bg-white flex items-center justify-center text-blue-600 font-bold hover:shadow transition cursor-pointer">f</a>
                         </div>
                     </div>
 
