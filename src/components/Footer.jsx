@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 export default function Footer() {
     return (
         <footer className="bg-[#EFF6FF] px-6 lg:px-16 py-16">
-            <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 justify-between">
-                <div className="flex flex-col gap-4 lg:col-span-2 pr-8">
+            <div className="max-w-screen-xl mx-auto grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-x-4 gap-y-10 lg:gap-12 justify-between">
+                <div className="flex flex-col gap-4 col-span-2 md:col-span-4 lg:col-span-2 pr-0 lg:pr-8">
                     <Link to="/" className="flex items-center gap-2 w-fit hover:opacity-90 transition cursor-pointer">
                         <img src="/Image1.png" alt="Paxofi Logo" className="w-10 h-10" />
                         <span className="text-[#0F2D4A] text-xl font-bold">PAXOFI</span>
