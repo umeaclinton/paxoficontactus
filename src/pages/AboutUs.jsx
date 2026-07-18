@@ -92,54 +92,54 @@ export default function AboutUs() {
             </div>
 
             {/* WHAT WE DO */}
-            <div className="bg-[#F8FAFC] px-6 lg:px-20 py-20 lg:py-28 text-center">
-                <h2 className="text-3xl lg:text-4xl font-bold text-[#0F172B] mb-4">What We Do</h2>
-                <p className="text-[#62748E] text-lg max-w-2xl mx-auto mb-16">
+            <div className="bg-[#F2F6F9] px-6 lg:px-20 py-20 lg:py-28 text-center">
+                <h2 className="text-2xl lg:text-3xl font-bold text-[#0F2D4A] mb-4">What We Do</h2>
+                <p className="text-[#45556C] text-sm md:text-base max-w-2xl mx-auto mb-16">
                     A comprehensive suite of financial technology solutions designed to help businesses manage payments, access credit, and operate more efficiently.
                 </p>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto text-left">
-                    <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <div className="bg-white p-6 lg:p-8 rounded-lg border border-gray-200">
                         <div className="mb-4 text-[#0F2D4A]">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="3" y1="22" x2="21" y2="22"></line><line x1="6" y1="18" x2="6" y2="11"></line><line x1="10" y1="18" x2="10" y2="11"></line><line x1="14" y1="18" x2="14" y2="11"></line><line x1="18" y1="18" x2="18" y2="11"></line><polygon points="12 2 20 7 4 7"></polygon></svg>
                         </div>
-                        <h3 className="text-[#0F172B] font-bold text-lg mb-2">Digital Banking</h3>
-                        <p className="text-[#62748E] text-sm leading-relaxed">Seamless corporate accounts with advanced treasury management.</p>
+                        <h3 className="text-[#0F2D4A] font-bold text-lg mb-2">Digital Banking</h3>
+                        <p className="text-[#45556C] text-[15px] leading-relaxed">Seamless corporate accounts with advanced treasury management.</p>
                     </div>
-                    <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <div className="bg-white p-6 lg:p-8 rounded-lg border border-gray-200">
                         <div className="mb-4 text-[#0F2D4A]">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="5" width="20" height="14" rx="2" ry="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg>
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"></rect><circle cx="12" cy="12" r="2"></circle><path d="M6 12h.01M18 12h.01"></path></svg>
                         </div>
-                        <h3 className="text-[#0F172B] font-bold text-lg mb-2">Payment Processing</h3>
-                        <p className="text-[#62748E] text-sm leading-relaxed">Omnichannel payment gateways for localized and cross-border transactions.</p>
+                        <h3 className="text-[#0F2D4A] font-bold text-lg mb-2">Payment Processing</h3>
+                        <p className="text-[#45556C] text-[15px] leading-relaxed">Omnichannel payment gateways for localized and cross-border transactions.</p>
                     </div>
-                    <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <div className="bg-white p-6 lg:p-8 rounded-lg border border-gray-200">
                         <div className="mb-4 text-[#0F2D4A]">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line><path d="M16 16l2 2 4-4"></path></svg>
                         </div>
-                        <h3 className="text-[#0F172B] font-bold text-lg mb-2">Lending & Credit</h3>
-                        <p className="text-[#62748E] text-sm leading-relaxed">Flexible capital solutions designed for business expansion and cash flow.</p>
+                        <h3 className="text-[#0F2D4A] font-bold text-lg mb-2">Lending & Credit</h3>
+                        <p className="text-[#45556C] text-[15px] leading-relaxed">Flexible capital solutions designed for business expansion and cash flow.</p>
                     </div>
-                    <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <div className="bg-white p-6 lg:p-8 rounded-lg border border-gray-200">
                         <div className="mb-4 text-[#0F2D4A]">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 3v18h18"/><circle cx="7" cy="14" r="2"/><circle cx="12" cy="9" r="2"/><circle cx="17" cy="15" r="2"/><circle cx="21" cy="5" r="2"/><path d="M8.5 12.5l2-2 3.5 4.5 3.5-8.5"/></svg>
                         </div>
-                        <h3 className="text-[#0F172B] font-bold text-lg mb-2">Business Management</h3>
-                        <p className="text-[#62748E] text-sm leading-relaxed">Integrated tools for invoicing, payroll, and expense tracking.</p>
+                        <h3 className="text-[#0F2D4A] font-bold text-lg mb-2">Business Management</h3>
+                        <p className="text-[#45556C] text-[15px] leading-relaxed">Integrated tools for invoicing, payroll, and expense tracking.</p>
                     </div>
-                    <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <div className="bg-white p-6 lg:p-8 rounded-lg border border-gray-200">
                         <div className="mb-4 text-[#0F2D4A]">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 15 5 12 8 9 5 12 2"/><polygon points="22 12 19 15 16 12 19 9 22 12"/><polygon points="12 22 9 19 12 16 15 19 12 22"/><polygon points="2 12 5 9 8 12 5 15 2 12"/></svg>
                         </div>
-                        <h3 className="text-[#0F172B] font-bold text-lg mb-2">APIs & Integrations</h3>
-                        <p className="text-[#62748E] text-sm leading-relaxed">Developer-friendly endpoints to embed financial services into your product.</p>
+                        <h3 className="text-[#0F2D4A] font-bold text-lg mb-2">APIs & Integrations</h3>
+                        <p className="text-[#45556C] text-[15px] leading-relaxed">Developer-friendly endpoints to embed financial services into your product.</p>
                     </div>
-                    <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <div className="bg-white p-6 lg:p-8 rounded-lg border border-gray-200">
                         <div className="mb-4 text-[#0F2D4A]">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
                         </div>
-                        <h3 className="text-[#0F172B] font-bold text-lg mb-2">Financial Infrastructure</h3>
-                        <p className="text-[#62748E] text-sm leading-relaxed">Scalable core banking engines for enterprise implementations.</p>
+                        <h3 className="text-[#0F2D4A] font-bold text-lg mb-2">Financial Infrastructure</h3>
+                        <p className="text-[#45556C] text-[15px] leading-relaxed">Scalable core banking engines for enterprise implementations.</p>
                     </div>
                 </div>
             </div>
