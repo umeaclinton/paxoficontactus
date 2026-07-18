@@ -20,7 +20,7 @@ export default function Navbar() {
             onContextMenu={isAbout ? (e) => e.preventDefault() : undefined}
         >
             <Link to="/" className="flex items-center gap-2 hover:opacity-90 transition cursor-pointer">
-                <img src="/Image1.png" alt="Paxofi Logo" className="w-10 h-10 pointer-events-none" draggable="false" />
+                <img src={isAbout ? "/aboutuslogo.png" : "/Image1.png"} alt="Paxofi Logo" className="w-10 h-10 pointer-events-none" draggable="false" />
                 <span className={`text-xl font-bold ${isAbout ? 'text-white' : 'text-[#0F2D4A]'}`}>PAXOFI</span>
             </Link>
 
