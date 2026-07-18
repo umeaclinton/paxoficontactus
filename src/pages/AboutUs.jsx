@@ -26,42 +26,40 @@ export default function AboutUs() {
                 <div className="lg:w-1/2 w-full">
                     {/* Placeholder for the building image */}
                     <div className="w-full aspect-[4/3] bg-gray-200 rounded-2xl overflow-hidden shadow-lg">
-                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop" alt="Paxofi Building" className="w-full h-full object-cover" />
+                        <img src="/Background+Border.png" alt="Paxofi Building" className="w-full h-full object-cover" />
                     </div>
                 </div>
             </div>
 
             {/* MISSION, VISION, VALUES */}
-            <div className="px-6 lg:px-20 py-16">
-                <div className="bg-[#F8FAFC] rounded-3xl p-8 lg:p-12">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <div className="bg-white p-8 rounded-2xl shadow-sm flex flex-col">
-                            <div className="w-12 h-12 bg-[#EFF6FF] rounded-xl flex items-center justify-center mb-6">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563EB" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
-                            </div>
-                            <h3 className="text-xl font-bold text-[#0F172B] mb-3">Our Mission</h3>
-                            <p className="text-[#62748E] leading-relaxed">
-                                To empower businesses across Africa with secure, scalable, and innovative financial technology solutions that drive sustainable growth.
-                            </p>
+            <div className="bg-[#F4F5F7] px-6 lg:px-20 py-20">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
+                    <div className="bg-white p-8 rounded-lg border border-gray-200 flex flex-col">
+                        <div className="w-10 h-10 bg-[#F1F5F9] rounded-lg flex items-center justify-center mb-6">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0F2D4A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
                         </div>
-                        <div className="bg-white p-8 rounded-2xl shadow-sm flex flex-col">
-                            <div className="w-12 h-12 bg-[#EFF6FF] rounded-xl flex items-center justify-center mb-6">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563EB" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-                            </div>
-                            <h3 className="text-xl font-bold text-[#0F172B] mb-3">Our Vision</h3>
-                            <p className="text-[#62748E] leading-relaxed">
-                                To be the most trusted financial technology partner for businesses across emerging markets globally.
-                            </p>
+                        <h3 className="text-lg font-bold text-[#0F2D4A] mb-3">Our Mission</h3>
+                        <p className="text-[#45556C] font-semibold text-[15px] leading-relaxed">
+                            To empower businesses across Africa with secure, scalable, and innovative financial technology solutions that drive sustainable growth.
+                        </p>
+                    </div>
+                    <div className="bg-white p-8 rounded-lg border border-gray-200 flex flex-col">
+                        <div className="w-10 h-10 bg-[#F1F5F9] rounded-lg flex items-center justify-center mb-6">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0F2D4A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                         </div>
-                        <div className="bg-white p-8 rounded-2xl shadow-sm flex flex-col">
-                            <div className="w-12 h-12 bg-[#EFF6FF] rounded-xl flex items-center justify-center mb-6">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563EB" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                            </div>
-                            <h3 className="text-xl font-bold text-[#0F172B] mb-3">Our Values</h3>
-                            <p className="text-[#62748E] leading-relaxed">
-                                Integrity, Innovation, Customer Success, Excellence, and Collaboration drive everything we do at Paxofi.
-                            </p>
+                        <h3 className="text-lg font-bold text-[#0F2D4A] mb-3">Our Vision</h3>
+                        <p className="text-[#45556C] font-semibold text-[15px] leading-relaxed">
+                            To be the most trusted financial technology partner for businesses across emerging markets globally.
+                        </p>
+                    </div>
+                    <div className="bg-white p-8 rounded-lg border border-gray-200 flex flex-col">
+                        <div className="w-10 h-10 bg-[#F1F5F9] rounded-lg flex items-center justify-center mb-6">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0F2D4A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
                         </div>
+                        <h3 className="text-lg font-bold text-[#0F2D4A] mb-3">Our Values</h3>
+                        <p className="text-[#45556C] font-semibold text-[15px] leading-relaxed">
+                            Integrity, Innovation, Customer Success, Excellence, and Collaboration drive everything we do at Paxofi.
+                        </p>
                     </div>
                 </div>
             </div>
