@@ -1,22 +1,42 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 export default function Navbar() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
     const [mobileSolutionsOpen, setMobileSolutionsOpen] = useState(false);
+    const location = useLocation();
+    const isAbout = location.pathname === '/about';
 
     return (
-        <nav className="flex justify-between items-center px-6 lg:px-16 py-4 border-b border-gray-200 relative z-50 bg-white">
+        <nav 
+            className={`flex justify-between items-center px-6 lg:px-16 py-4 border-b relative z-50 ${isAbout ? 'border-transparent' : 'border-gray-200 bg-white'}`}
+            style={isAbout ? { 
+                backgroundImage: 'url(/TopNavBar.png)', 
+                backgroundSize: 'cover', 
+                backgroundPosition: 'center',
+                userSelect: 'none'
+            } : {}}
+            onContextMenu={isAbout ? (e) => e.preventDefault() : undefined}
+        >
             <Link to="/" className="flex items-center gap-2 hover:opacity-90 transition cursor-pointer">
-                <img src="/Image1.png" alt="Paxofi Logo" className="w-10 h-10" />
-                <span className="text-[#0F2D4A] text-xl font-bold">PAXOFI</span>
+                <img src="/Image1.png" alt="Paxofi Logo" className="w-10 h-10 pointer-events-none" draggable="false" />
+                <span className={`text-xl font-bold ${isAbout ? 'text-white' : 'text-[#0F2D4A]'}`}>PAXOFI</span>
             </Link>
 
             {/* Desktop Nav Links */}
-            <div className="hidden md:flex items-center gap-6 text-[#45556C] font-medium text-sm">
-
-                {/* Products Dropdown */}
+            <div className={`hidden md:flex items-center gap-6 font-medium text-sm ${isAbout ? 'text-white' : 'text-[#45556C]'}`}>
+                
+                {isAbout ? (
+                    <>
+                        <Link to="/" className="hover:opacity-80 transition">Solutions</Link>
+                        <Link to="/" className="hover:opacity-80 transition">Industries</Link>
+                        <Link to="/about" className="border-b-2 border-white pb-1 hover:opacity-80 transition">Company</Link>
+                        <Link to="/" className="hover:opacity-80 transition">Careers</Link>
+                    </>
+                ) : (
+                    <>
+                        {/* Products Dropdown */}
                 <div className="relative group">
                     <button className="flex items-center gap-1 hover:text-[#0F2D4A] transition cursor-pointer">
                         Products <span className="opacity-50">▾</span>
@@ -46,21 +66,29 @@ export default function Navbar() {
                 </div>
 
                 <Link to="/" className="hover:text-[#0F2D4A] transition">Pricing</Link>
-                <Link to="/" className="hover:text-[#0F2D4A] transition">Company</Link>
+                        <Link to="/" className="hover:text-[#0F2D4A] transition">Company</Link>
+                    </>
+                )}
             </div>
 
-            <Link to="/about" className="hidden md:inline-block bg-[#0F2D4A] text-white px-5 py-2 rounded-xl text-sm font-semibold hover:bg-[#1a4369] transition">
-                About us
-            </Link>
+            {isAbout ? (
+                <Link to="/" className="hidden md:inline-block bg-white text-[#0F2D4A] px-5 py-2 rounded-xl text-sm font-semibold hover:bg-gray-100 transition">
+                    Contact Us
+                </Link>
+            ) : (
+                <Link to="/about" className="hidden md:inline-block bg-[#0F2D4A] text-white px-5 py-2 rounded-xl text-sm font-semibold hover:bg-[#1a4369] transition">
+                    About us
+                </Link>
+            )}
 
             {/* Mobile Burger Button */}
             <button
                 className="md:hidden flex flex-col gap-1.5 p-2"
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
-                <span className="w-6 h-0.5 bg-[#0F2D4A] block"></span>
-                <span className="w-6 h-0.5 bg-[#0F2D4A] block"></span>
-                <span className="w-6 h-0.5 bg-[#0F2D4A] block"></span>
+                <span className={`w-6 h-0.5 block ${isAbout ? 'bg-white' : 'bg-[#0F2D4A]'}`}></span>
+                <span className={`w-6 h-0.5 block ${isAbout ? 'bg-white' : 'bg-[#0F2D4A]'}`}></span>
+                <span className={`w-6 h-0.5 block ${isAbout ? 'bg-white' : 'bg-[#0F2D4A]'}`}></span>
             </button>
 
             {/* Mobile Menu */}
