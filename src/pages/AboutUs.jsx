@@ -25,8 +25,11 @@ export default function AboutUs() {
                 </div>
                 <div className="lg:w-1/2 w-full">
                     {/* Placeholder for the building image */}
-                    <div className="w-full aspect-[4/3] bg-gray-200 rounded-2xl overflow-hidden shadow-lg">
-                        <img src="/Background+Border.png" alt="Paxofi Building" className="w-full h-full object-cover" />
+                    <div 
+                        className="w-full aspect-[4/3] bg-gray-200 rounded-2xl overflow-hidden shadow-lg"
+                        onContextMenu={(e) => e.preventDefault()}
+                    >
+                        <img src="/Background+Border.png" alt="Paxofi Building" className="w-full h-full object-cover pointer-events-none" draggable="false" />
                     </div>
                 </div>
             </div>
@@ -67,8 +70,11 @@ export default function AboutUs() {
             {/* OUR STORY */}
             <div className="px-6 lg:px-20 py-16 lg:py-24 flex flex-col lg:flex-row items-center gap-16">
                 <div className="lg:w-1/2 w-full">
-                    <div className="w-full rounded-2xl overflow-hidden shadow-lg border border-gray-100">
-                        <img src="/storyBackground+Border.png" alt="Paxofi Presentation" className="w-full h-full object-cover" />
+                    <div 
+                        className="w-full rounded-2xl overflow-hidden shadow-lg border border-gray-100"
+                        onContextMenu={(e) => e.preventDefault()}
+                    >
+                        <img src="/storyBackground+Border.png" alt="Paxofi Presentation" className="w-full h-full object-cover pointer-events-none" draggable="false" />
                     </div>
                 </div>
                 <div className="lg:w-1/2 flex flex-col gap-6">
