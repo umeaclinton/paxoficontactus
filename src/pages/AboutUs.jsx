@@ -68,7 +68,7 @@ export default function AboutUs() {
             <div className="px-6 lg:px-20 py-16 lg:py-24 flex flex-col lg:flex-row items-center gap-16">
                 <div className="lg:w-1/2 w-full">
                     <div className="w-full rounded-2xl overflow-hidden shadow-lg border border-gray-100">
-                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop" alt="Paxofi Presentation" className="w-full h-full object-cover" />
+                        <img src="/storyBackground+Border.png" alt="Paxofi Presentation" className="w-full h-full object-cover" />
                     </div>
                 </div>
                 <div className="lg:w-1/2 flex flex-col gap-6">
