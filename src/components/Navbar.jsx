@@ -99,7 +99,7 @@ export default function Navbar() {
                         onClick={() => setMobileProductsOpen(!mobileProductsOpen)}
                         className="flex items-center justify-between w-full text-left font-semibold text-[#0F2D4A] py-2"
                     >
-                        Products <span className={`transition-transform ${mobileProductsOpen ? 'rotate-90' : ''}`}>▸</span>
+                        Products <span className={`transition-transform text-[18px] ${mobileProductsOpen ? 'rotate-90' : ''}`}>▸</span>
                     </button>
                     <div className={`${mobileProductsOpen ? 'flex' : 'hidden'} flex-col gap-2 pl-4 mt-2`}>
                         <Link to="/" className="block text-sm text-[#45556C] hover:text-[#0F2D4A]">Paxofi Pay</Link>
@@ -118,7 +118,7 @@ export default function Navbar() {
                         onClick={() => setMobileSolutionsOpen(!mobileSolutionsOpen)}
                         className="flex items-center justify-between w-full text-left font-semibold text-[#0F2D4A] py-2"
                     >
-                        Solutions <span className={`transition-transform ${mobileSolutionsOpen ? 'rotate-90' : ''}`}>▸</span>
+                        Solutions <span className={`transition-transform text-[18px] ${mobileSolutionsOpen ? 'rotate-90' : ''}`}>▸</span>
                     </button>
                     <div className={`${mobileSolutionsOpen ? 'flex' : 'hidden'} flex-col gap-2 pl-4 mt-2`}>
                         <Link to="/" className="block text-sm text-[#45556C] hover:text-[#0F2D4A]">Startups</Link>
